@@ -17,23 +17,35 @@
 /* TODO: Fonts*/
 
 body {
+	position:relative;
 	background-color: var(--bg-main);
 	color: var(--text-main);
-	margin: 24px 2vw 0 2vw; /* Eventually increase left offset for nav */
-	padding-top: calc(max(1.6vh, 16px) + 2*max(0.8vw, 12px));
+	min-height: 100vh;
+    margin: 0;	
 	font-family: "Nunito Sans", sans-serif;
 }
 
 header {
 	margin: 0;
+	min-height: 50px;
 	background-color: var(--bg-sec);
-	padding: 10px max(0.8vw, 12px) 10px max(0.8vw, 12px);
 	font-size: max(1.6vh, 16px);
-	position: absolute;
+
 	top: 0;
 	left: 0;
-	width: calc(100vw - 2 * max(0.8vw, 12px));
+	
 	overflow: hidden;
+}
+
+.img_credits {
+	font-size: small;
+	color: var(--text-accent);
+}
+
+.responsive {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
 }
 
 img {
@@ -45,12 +57,12 @@ img {
 /* Maybe add something for footer elements (flex/box) */
 footer {
 	background-color: var(--bg-dark);
-	padding: 32px max(2.8vw, 32px) 32px max(2.8vw, 32px);
 	color: var(--text-sec);
 	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
 	left: 0;
-	width: calc(100vw - 2 * max(2.8vw, 32px));
-	margin-top: 24px;
 	/* min-height: 160px; */
 }
 
@@ -62,6 +74,10 @@ footer nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+}
+
+#headtext {
+	padding: 10px;
 }
 
 h2 {
@@ -78,6 +94,17 @@ a:hover {
 	color: var(--text-accent-hover);
 }
 
+.main {
+	margin: 1vw 1vw;
+}
+
+
+body::after {
+  content: '';
+  display: block;
+  height: 50px;
+  /* Set same as footer's height */
+}
 /* Test for links and btn */
 /* button {
 	background-color: var(--accent);
