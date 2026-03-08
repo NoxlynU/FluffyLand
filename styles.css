@@ -110,6 +110,16 @@ body::after {
   /* Set same as footer's height */
 }
 
+#noxlynu {
+	color: rgb(166, 139, 231)
+	/* Color for NoxlynU's name*/
+}
+
+#needenk {
+	color:#50e0a4
+	/* Color for Needenk's name*/
+}
+
 /* Test for links and btn */
 /* button {
 	background-color: var(--accent);
