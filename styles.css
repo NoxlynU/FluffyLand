@@ -37,6 +37,17 @@ header {
 	overflow: hidden;
 }
 
+#headtext {
+	cursor: pointer;
+	transition-duration: 150ms;
+	width: fit-content;
+	text-decoration: underline solid #ffffff00;
+}
+
+#headtext:hover {
+	text-decoration: underline solid #ffffffff;
+}
+
 .img_credits {
 	font-size: small;
 	color: var(--text-sec);
