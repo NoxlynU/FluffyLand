@@ -21,7 +21,7 @@ body {
 	background-color: var(--bg-main);
 	color: var(--text-main);
 	min-height: 100vh;
-    margin: 0;	
+  margin: 0;	
 	font-family: "Nunito Sans", sans-serif;
 }
 
@@ -39,7 +39,8 @@ header {
 
 .img_credits {
 	font-size: small;
-	color: var(--text-accent);
+	color: var(--text-sec);
+	margin-bottom: 6px;
 }
 
 .responsive {
@@ -54,7 +55,6 @@ img {
 	cursor: pointer;
 }
 
-/* Maybe add something for footer elements (flex/box) */
 footer {
 	background-color: var(--bg-dark);
 	color: var(--text-sec);
@@ -67,7 +67,7 @@ footer {
 }
 
 footer a {
-	margin-top: 0;
+	margin-top: 14px;
 }
 
 footer nav {
@@ -98,13 +98,13 @@ a:hover {
 	margin: 1vw 1vw;
 }
 
-
 body::after {
   content: '';
   display: block;
   height: 50px;
   /* Set same as footer's height */
 }
+
 /* Test for links and btn */
 /* button {
 	background-color: var(--accent);
