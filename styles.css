@@ -21,6 +21,7 @@ body {
 	color: var(--text-main);
 	margin: 24px 2vw 0 2vw; /* Eventually increase left offset for nav */
 	padding-top: calc(max(1.6vh, 16px) + 2*max(0.8vw, 12px));
+	font-family: "Nunito Sans", sans-serif;
 }
 
 header {
@@ -44,19 +45,23 @@ img {
 /* Maybe add something for footer elements (flex/box) */
 footer {
 	background-color: var(--bg-dark);
-	padding: 12px max(2.8vw, 32px) 8px max(2.8vw, 32px);
+	padding: 32px max(2.8vw, 32px) 32px max(2.8vw, 32px);
 	color: var(--text-sec);
 	position: absolute;
 	left: 0;
 	width: calc(100vw - 2 * max(2.8vw, 32px));
 	margin-top: 24px;
-	min-height: 160px;
+	/* min-height: 160px; */
+}
+
+footer a {
+	margin-top: 0;
 }
 
 footer nav {
 	display: flex;
-	flex-direction: column;
-	gap: 4px;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
 
 h2 {

@@ -1,0 +1,1 @@
+header = document.getElementsByClassName("header")
