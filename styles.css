@@ -5,9 +5,12 @@
 	--bg-nav: rgb(41, 43, 42);
 	--bg-dark: rgb(42, 49, 44); /* TODO: Make this one better, add accent color */
 	--accent: rgb(49, 109, 66);
-	--accent-hover: rgb(42, 90, 55);
+	--accent-hover: rgb(57, 128, 77);
+	--accent-hover-dark: rgb(42, 90, 55);
 	--text-main: #ffffff;
 	--text-sec: rgb(201, 204, 202);
+	--text-accent: rgb(75, 177, 104);
+	--text-accent-hover: rgb(81, 196, 114);
 	padding: 0;
 	margin: 0 0 0 0;
 }
@@ -16,11 +19,11 @@
 body {
 	background-color: var(--bg-main);
 	color: var(--text-main);
-	margin: 0 2vw 0 2vw; /* Eventually increase left offset for nav */
+	margin: 24px 2vw 0 2vw; /* Eventually increase left offset for nav */
 	padding-top: calc(max(1.6vh, 16px) + 2*max(0.8vw, 12px));
 }
 
-.header {
+header {
 	margin: 0;
 	background-color: var(--bg-sec);
 	padding: 10px max(0.8vw, 12px) 10px max(0.8vw, 12px);
@@ -32,15 +35,42 @@ body {
 	overflow: hidden;
 }
 
+img {
+	margin: 8px 0 8px 0;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
 /* Maybe add something for footer elements (flex/box) */
-.footer {
+footer {
 	background-color: var(--bg-dark);
 	padding: 12px max(2.8vw, 32px) 8px max(2.8vw, 32px);
 	color: var(--text-sec);
 	position: absolute;
-	bottom: 0;
 	left: 0;
 	width: calc(100vw - 2 * max(2.8vw, 32px));
+	margin-top: 24px;
+	min-height: 160px;
+}
+
+footer nav {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+h2 {
+	margin-bottom: 10px;
+}
+
+a {
+	color: var(--text-accent);
+	text-decoration: underline;
+	transition-duration: 150ms;
+}
+
+a:hover {
+	color: var(--text-accent-hover);
 }
 
 /* Test for links and btn */
@@ -51,18 +81,5 @@ body {
 }
 
 button:hover {
-	background-color: var(--accent-hover);
-} */
-
-/* Very broken */
-/* .nav {
-	margin: 0;
-	padding: 0;
-	background-color: var(--bg-nav);
-	width: 120px;
-	height: calc(100% - (max(1.6vh, 16px) + 20px));
-	position: absolute;
-	top: calc(max(1.6vh, 16px) + 20px);
-	left: 0;
-	overflow: hidden;
+	background-color: var(--accent-hover-dark);
 } */
