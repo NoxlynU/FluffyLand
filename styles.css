@@ -1,0 +1,68 @@
+/* Essential variables */
+* {
+	--bg-main: rgb(54, 61, 56);
+	--bg-sec: rgb(65, 82, 71);
+	--bg-nav: rgb(41, 43, 42);
+	--bg-dark: rgb(42, 49, 44); /* TODO: Make this one better, add accent color */
+	--accent: rgb(49, 109, 66);
+	--accent-hover: rgb(42, 90, 55);
+	--text-main: #ffffff;
+	--text-sec: rgb(201, 204, 202);
+	padding: 0;
+	margin: 0 0 0 0;
+}
+/* TODO: Fonts*/
+
+body {
+	background-color: var(--bg-main);
+	color: var(--text-main);
+	margin: 0 2vw 0 2vw; /* Eventually increase left offset for nav */
+	padding-top: calc(max(1.6vh, 16px) + 2*max(0.8vw, 12px));
+}
+
+.header {
+	margin: 0;
+	background-color: var(--bg-sec);
+	padding: 10px max(0.8vw, 12px) 10px max(0.8vw, 12px);
+	font-size: max(1.6vh, 16px);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: calc(100vw - 2 * max(0.8vw, 12px));
+	overflow: hidden;
+}
+
+/* Maybe add something for footer elements (flex/box) */
+.footer {
+	background-color: var(--bg-dark);
+	padding: 12px max(2.8vw, 32px) 8px max(2.8vw, 32px);
+	color: var(--text-sec);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: calc(100vw - 2 * max(2.8vw, 32px));
+}
+
+/* Test for links and btn */
+/* button {
+	background-color: var(--accent);
+	color: #ffffff;
+	transition-duration: 200ms;
+}
+
+button:hover {
+	background-color: var(--accent-hover);
+} */
+
+/* Very broken */
+/* .nav {
+	margin: 0;
+	padding: 0;
+	background-color: var(--bg-nav);
+	width: 120px;
+	height: calc(100% - (max(1.6vh, 16px) + 20px));
+	position: absolute;
+	top: calc(max(1.6vh, 16px) + 20px);
+	left: 0;
+	overflow: hidden;
+} */
